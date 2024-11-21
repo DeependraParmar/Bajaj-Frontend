@@ -48,9 +48,9 @@ const App = () => {
   return (
     <>
       <div style={{ padding: '20px', textAlign: 'center' }}>
-        <div className='footer'>Developed by: <a href="http://deependraparmar.vercel.app" target="_blank" rel="noopener noreferrer">Deependra Parmar</a></div>
+        <div className='footer'>Developed by: <a href="http://deependraparmar.vercel.app" target="_blank" rel="noopener noreferrer">Deependra Parmar 🔥🎯</a></div>
         <h1>JSON Processor: BFHL</h1>
-        <b style={{color: 'red'}}>In case of no response, please wait for 50 seconds. <br/> It takes about 50 seconds for the backend service to start again.</b> <br /><br />
+        <b style={{color: 'red'}}>In case of no response, please wait for at least 50 seconds. <br/> It takes about 50 seconds for the backend service to start again.</b> <br /><br />
         <textarea
           rows="8"
           cols="80"
