@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
 
 const App = () => {
@@ -59,11 +59,14 @@ const App = () => {
           onChange={handleJsonInputChange}
           style={{ marginBottom: '10px', display: 'block' }}
         />
+        <button onClick={() => setJsonInput(`${JSON.stringify({ "data": ["M", "1", "334", "4", "B", "Z", "a", "7"] })}`)} style={{ marginBottom: '20px' }}>
+          Add test JSON
+        </button> &nbsp;
         <button onClick={handleSubmit} style={{ marginBottom: '20px' }}>
           Submit
         </button>
         {error && <p style={{ color: 'red' }}>{error}</p>}
-        {responseData && (
+        {responseData && jsonInput && (
           <>
             <h3>Response</h3>
             <Select
