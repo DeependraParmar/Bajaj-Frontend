@@ -18,6 +18,16 @@ const App = () => {
     setJsonInput(e.target.value);
   };
 
+  const firstCall = async() => {
+    const response = await axios.get('https://bajaj-backend-fa6r.onrender.com/bfhl');
+    console.log(response.status);
+  }
+
+  useEffect(() => {
+    console.log("First Call() done.....")
+    firstCall();
+  }, [])
+
   const handleSubmit = async () => {
     try {
       setError(null);
